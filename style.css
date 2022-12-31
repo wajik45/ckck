@@ -1,0 +1,140 @@
+:root {
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(img/bg1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+}
+video {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .2;
+    position: absolute;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+/* Netral */
+.txt-yth, .txt-nama, .txt-kata {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.txt-wedding, .txt-ryevo-nadia, .txt-hari, .txt-tanggal, .txt-yth, .txt-nama, .txt-kata
+{
+    transition: 1s;
+    color: rgba(0, 0, 0, 0);
+}
+.kembang {
+    transition: 1s;
+}
+/* txt */
+.txt-ryevo, .txt-nadia {
+    display: inline-block;
+    transition: 1s;
+}
+.txt-ryevo {
+    transform: translateY(-100px);
+}
+.txt-nadia {
+    transform: translateY(100px);
+}
+/* Kotak Satu */
+.kotak-awal {
+    max-width: 480px;
+    min-height: 400px;
+    font-family: 'Charm', cursive;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 20% 0 20% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    transform: scale(0);
+    transition: 1s;
+}
+.kotak-buka {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding: 0 10px;
+}
+.tombol-buka {
+    width: 60px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: .7rem;
+    transform: scale(0);
+    color: rgba(0, 0, 0, 0);
+    transition: 1s;
+}
+.tombol-buka svg {
+    width: 25px;
+    height: 25px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10%;
+    transition: .2s color;
+    transition: 1s background-color;
+}
+.tombol-buka svg:hover {
+    color: #999;
+}
+/* Kotak Dua */
+.kotak-undangan {
+    height: 100vh;
+    position: absolute;
+}
+.undangan {
+    height: 100%;
+}
+.undangan img {
+    height: 100%;
+}
+/* JS */
+.xy-nol {
+    transform: translate(0);
+}
+.tr-skala-satu {
+    transform: scale(1);
+}
+.rgba-color-putih {
+    color: rgba(255, 255, 255, 1);
+}
+.rgba-bg-item-tr {
+    background-color: rgba(0, 0, 0, .5);
+}
+.rotasi-360 {
+    transform: rotate(360deg);
+}
